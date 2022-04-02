@@ -292,6 +292,7 @@ static UIViewController *TopViewControllerForViewController(UIViewController *vi
   }
 
   for (int i = 0; i < [paths count]; i++) {
+    NSString *path = paths[i];
 	NSURL *fileUrl = [NSURL fileURLWithPath:path];
 	[items addObject:fileUrl];
   }
